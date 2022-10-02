@@ -5,7 +5,7 @@ import cors from "cors";
 import "dotenv/config";
 
 
-const Tezos = new TezosToolkit('https://ghostnet.tezos.marigold.dev/');
+const Tezos = new TezosToolkit('https://ghostnet.smartpy.io/');
 Tezos.setProvider({ signer: await InMemorySigner.fromSecretKey(process.env.SIGNING_KEY) });
 
 const port =  process.env.PORT || 3000;
