@@ -49,7 +49,7 @@ app.post('/sendObjkt', (req, res) => {
      const params = [{from_: 'tz1XRPyYPj85qUmY9uHRp6JeAHBrKuLvLUni', txs: [{to_: data.address, token_id: data.token_id, amount: 1}]}]
      console.log(`Transfering Objkt to ${data.address}...`);
      Tezos.contract
-     .at('KT18shTEJc8wGGtyuVmLcBvmU2rUYCRLeCqe')
+     .at('KT1GvaDyNfPMev14WU96ewJUwHgfBD9eHJrh')
      .then((c) => {
        c.methods.transfer(params).send({
         amount: 0,
